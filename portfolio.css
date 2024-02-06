@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ffffff;
+    background: #000000;
+}
+
+/*---------------------------- header--------------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 96%;
+}
+
+h1 {
+    color: #b52b65;
+    font-weight: 800;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 0.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    padding: 0 0.5em;
+}
+
+nav a:hover {
+    color: #b52b65;
+    background-clip: text;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/*---------------------------- hero--------------------------- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6em;
+    padding: 6em 2em 2em;
+}
+
+.hero-content {
+    padding: 0 2em;
+}
+
+h2 {
+    padding-bottom: 0.5em;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+.cv-button{
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #b52b65;
+    padding: 0.5em 1em;
+    background-color: #b52b65;
+    box-shadow: 0 4px 5px rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover{
+    background-color: #000000;
+}
+
+.highlight {
+    color: #b52b65;
+    font-weight: bold;
+}
+
+/*---------------------------- about--------------------------- */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8em 2em 2em;
+    margin: 1em 2em 0.5em;
+    border-top: 2px solid #b52b65;
+}
+ 
+.about-content {
+    max-width: 700px;
+    overflow: hidden;
+}
+
+p {
+   padding: 0.5em 0; 
+}
+
+/*---------------------------- skills--------------------------- */
+.skills {
+    margin: 2em 0;
+    padding-top: 6em;
+    padding-bottom: 1em;
+}
+
+.skills h2 {
+    text-align: center;
+    padding-left: 1.8em;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.lang {
+    padding-right: 8em;
+}
+
+.tools {
+    padding-left: 4em;
+}
+
+#skills .icons i{
+    padding: 1em;
+    font-size: 25px;
+}
+
+/*---------------------------- projects--------------------------- */
+.project {
+    padding-top: 6em;
+    margin-top: 4em;
+}
+
+.project h2 {
+    text-align: center;
+}
+
+.project-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    margin: 0;
+}
+
+.first-project, .second-project {
+    width: 50%;
+    background: #333;
+    padding: 4em 2em;
+    margin: 4em 2em 2em;
+    height: 26vh;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.project i {
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-top: 0.5em;
+}
+
+.github-button {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #b52b65;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: 2px solid #b52b65;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    margin-bottom: 3em;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #000000;
+}
+
+/*---------------------------- achievement--------------------------- */
+.achievements {
+    padding: 6em 6em 1em 2em;
+    margin: 6em 6em 1em 2em;
+}
+
+.achievements h2 {
+    text-align: center;
+    margin-left: 3em;
+    padding-left: 3em;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+}
+
+.certification {
+    padding: 0 4em;
+    margin: 0 4em;
+}
+
+.certification h3 {
+    margin: 2em 0;
+    text-align: center;
+    color: #b52b65;
+}
+
+.offer-letter h3 {
+    margin: 2em 0;
+    text-align: center;
+    color: #b52b65;
+}
+
+/*---------------------------- contact--------------------------- */
+.contact {
+    margin: 2em 0.5em;
+}
+
+.contact h2 {
+    text-align: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    margin: 2em 30em;
+    padding: 3em 0;
+}
+
+input {
+    width: 300px;
+    height: 8vh;
+    margin: 1em 1em;
+    border: none;
+    border-bottom: 2px solid #b52b65;
+    outline: none;
+    background: #333;
+    font-size: 16px;
+}
+
+.name {
+    position: absolute;
+    right: 58%;
+    margin-top: 2em;
+    
+}
+
+.email {
+    position: absolute;
+    right: 58%;
+    margin-top: 7em;
+}
+
+label {
+    color: #b52b65;
+    outline: none;
+}
+
+textarea {
+    width: 300px;
+    height: 10vh;
+    background: #333;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #b52b65;
+}
+
+button {
+    margin-top: 3em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: 2px solid #b52b65;
+    color: #ffffff;
+    background: #b52b65;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.connection {
+    text-align: center;
+}
+
+.connection h3 {
+    margin-bottom: 0.5em;
+}
+
+.connection a {
+    text-decoration: none;
+    color: #b52b65;
+    padding: 0 1em;
+}
+
+.connection i{
+    padding: 0 0.3em;
+}
+
+/*---------------------------- footer--------------------------- */
+footer p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+

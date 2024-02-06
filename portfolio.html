@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Dimakatso - Web Developer</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Dimakatso</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to my corner of the web!</h2>
+                <p>I'm Dimakatso, a passionate <span class="highlight">web developer</span> dedicated to crafting digital experiences that blend creativity and functionality. Currently embarking on an exciting internship at CodSoft, I bring a dynamic blend of skills in web development, fueled by a foundation in Applied Mathematics and Physics. Let's explore the endless possibilities of the digital realm together.</p>
+                <a class="cv-button" href="" target="_blank">View CV</a>
+            </div>
+            <img width="600" src="91A39E9A-D175-4083-BE57-3767F732E12E.png" alt="Dimakatso-profilePicture">
+        </section>
+        <section id="about" class="about">
+            <img width="700" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs3gYh14d8qHKk8b-2zZTeIagJO_NFi0G_cAaQqif6aGiHMZXIUqVUSxNBqsuNKDI6z_Q&usqp=CAU" alt="coding-image">
+            <div class="about-content">
+                <h2>Navigating My Narrative: Dive into About!</h2>
+                <p>Passionate and detail-oriented, I am currently immersed in an enriching internship at CodSoft, a journey set to continue until 15th February 2024. My journey into the world of coding began during my university years, where I explored languages such as <span class="highlight">C++</span> and <span class="highlight">Python</span>, laying a solid foundation in Applied Mathematics and Physics.</p>
+                <p>Armed with hands-on experience in web development and a validated Responsive Web Design Certification earned through FreeCodeCamp, I am fueled by a desire to contribute to groundbreaking projects and continually elevate my skill set. My dedication to excellence and my ongoing internship at CodSoft underscore my commitment to staying at the forefront of technology, making meaningful contributions, and shaping a successful career in the dynamic field of web development.</p>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="icons">
+                <div class="lang">
+                    <h3>Programming Languages</h3>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="tools">
+                    <h3>Development Tools</h3>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-node-js"></i>
+                    <p>Visual Studio Code</p>
+                </div>
+            </div>
+        </section>
+        <section id="project" class="project">
+            <h2>GitHub Repository</h2>
+            <div class="project-container">
+                <div class="first-project">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>Netflix Clone</h3>
+                    <p>Successfully recreated the Netflix user interface using CSS and HTML, focusing on design 
+                        accuracy. Employed responsive design principles for optimal viewing. Developed with VS 
+                        Code for efficient coding and utilized Live Server for real-time preview during 
+                        development.
+                    </p>
+                    <a class="github-button" href="https://github.com/DimakatsoMotau/Netflix-Clone-HTML-CSS.git" target="_blank">View on GitHub</a>
+                </div>
+                <div class="second-project">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>Palindrome Checker Project</h3>
+                    <p>Develop a robust palindrome checker using HTML, CSS, JavaScript, VS Code, Live Server, 
+                        and Node.js. Implemented a user-friendly interface for input and dynamic display of 
+                        palindrome results. 
+                    </p>
+                    <a class="github-button" href="https://github.com/DimakatsoMotau/Palindrome-Checker-Web" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section id="achievements" class="achievements">
+            <h2>Achievements</h2>
+            <div class="achievements-container">
+                <div class="certification">
+                    <h3>Responsive Web Design Certification</h3>
+                    <a class="image" href="https://freecodecamp.org/certification/Dimakatso/responsive-web-design"><img width="400" src="PHOTO-2024-01-21-18-08-25.jpg" alt="certification"></a>
+                </div>
+                <div class="offer-letter">
+                    <h3>Internship Offer Letter</h3>
+                    <a class="image" href=""><img width="368" src="PHOTO-2024-01-21-18-08-25 (1).jpg" alt="internship-offer-letter"></a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="">
+                <h3>Send Message</h3>
+                <label class="name" for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label class="email" for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Your Message Here..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="connection">
+                <h3>Connect with me!</h3>
+                <a href="tel:+0663980137"><i class="fa fa-phone"></i>Call me</a>
+                <a href="mailto:dimakatsosim@gmail.com"><i class="fa fa-envelope"></i>Email me</a>
+                <a href="https://www.Instagram.com/dimakatso.xx/"><i class="fa-brands fa-square-instagram"></i>Visit my Instagram</a>
+                <a href="https://github.com/DimakatsoMotau"><i class="fa-brands fa-github"></i>Visit my GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dimakatso. All rights reserved.</p>
+    </footer>
+</body>
+</html>
